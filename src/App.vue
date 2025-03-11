@@ -1,4 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+import Hamburger from './components/Hamburger/Hamburger.vue'
+import Nav from './components/Nav/Nav.vue'
+
+const isActiveHamburger = ref<boolean>(false)
+
+const onToggleHamburger = (value: boolean) => {
+  console.log('value ==>', value)
+
+  isActiveHamburger.value = value
+}
+</script>
 
 <template>
   <div class="main-wrapper">
@@ -15,19 +27,8 @@
               alt=""
           /></a>
         </header>
-        <nav class="main-section__nav nav-menu">
-          <ul class="nav-menu__list">
-            <li class="nav-menu__list-item">
-              <a href="#about-me">Обо мне</a>
-            </li>
-            <li class="nav-menu__list-item">
-              <a href="#work">Занятия</a>
-            </li>
-            <li class="nav-menu__list-item">
-              <a href="#">Запись</a>
-            </li>
-          </ul>
-        </nav>
+        <Hamburger :isActive="isActiveHamburger" @toggle="onToggleHamburger" />
+        <Nav />
       </div>
 
       <!-- ограничивающий контейнер основного контента первой секции -->

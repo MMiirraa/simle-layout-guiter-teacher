@@ -9,6 +9,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Elips: typeof import('./src/components/Elips/Elips.vue')['default']
+    Hamburger: typeof import('./src/components/Hamburger/Hamburger.vue')['default']
     Header: typeof import('./src/components/Header/Header.vue')['default']
     MyAwesomeIcon: typeof import('./src/components/MyAwesomeIcon/MyAwesomeIcon.vue')['default']
     MyButton: typeof import('./src/components/MyButton/MyButton.vue')['default']
@@ -17,6 +18,7 @@ declare module 'vue' {
     MyHeader: typeof import('./src/components/MyHeader/MyHeader.vue')['default']
     MyProductCard: typeof import('./src/components/MyProductCard/MyProductCard.vue')['default']
     MyTitle: typeof import('./src/components/MyTitle/MyTitle.vue')['default']
+    Nav: typeof import('./src/components/Nav/Nav.vue')['default']
     NavMenu: typeof import('./src/components/NavMenu/NavMenu.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
