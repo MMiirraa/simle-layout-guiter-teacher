@@ -18,7 +18,7 @@ declare module 'vue' {
     MyHeader: typeof import('./src/components/MyHeader/MyHeader.vue')['default']
     MyProductCard: typeof import('./src/components/MyProductCard/MyProductCard.vue')['default']
     MyTitle: typeof import('./src/components/MyTitle/MyTitle.vue')['default']
-    Nav: typeof import('./src/components/Nav/Nav.vue')['default']
+    Nav: typeof import('./src/components/NavMenu/Nav.vue')['default']
     NavMenu: typeof import('./src/components/NavMenu/NavMenu.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

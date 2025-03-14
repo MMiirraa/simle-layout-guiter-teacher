@@ -25,6 +25,7 @@ export default defineConfigWithVueTs(
       '@typescript-eslint/no-unused-vars': 'off',
       'vue/no-unused-vars': 'error',
       'vue/script-setup-uses-vars': 'error',
+      'vue/multi-word-component-names': 'off',
     },
   },
 )
